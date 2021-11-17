@@ -1,18 +1,44 @@
 <template>
   <div>
-    <Tutorial />
-    <p class="focus:ring-2 focus:ring-red-500">hello word</p>
-    <button class="btn-indigo">Click me</button>
-    <button class="btn-blue">Click me</button>
+    <banner></banner>
+    <ourservice></ourservice>
+    <advantage></advantage>
+    <successfulcase></successfulcase>
+    <evaluation></evaluation>
+    <openclass></openclass>
+    <news></news>
   </div>
 </template>
 
 <script>
-export default {};
+import Banner from "../views/Banner.vue";
+import Ourservice from "../views/Ourservice.vue";
+import Advantage from "../views/Advantage.vue";
+import Successfulcase from "../views/Successfulcase.vue";
+import Evaluation from "../views/Evaluation.vue";
+import Openclass from "../views/Openclass.vue";
+import News from "../views/News.vue";
+export default {
+  components: {
+    Banner,
+    Ourservice,
+    Advantage,
+    Successfulcase,
+    Evaluation,
+    Openclass,
+    News,
+  },
+};
 </script>
 
-<style>
-.btn-indigo {
-  @apply py-2 px-4 bg-indigo-500 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75;
+<style lang="scss">
+@mixin no-select() {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body {
+  @include no-select;
 }
 </style>
