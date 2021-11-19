@@ -4,14 +4,17 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'zttailwind',
+    title: '研发管理体系咨询,IPD体系咨询,企业管理咨询，专注于产品创新与研发管理咨询领域-中天华夏研发管理咨询公司',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'zh'
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'keywords', content: '' },
       { hid: 'description', name: 'description', content: '' },
+      { name: 'author', content: '深圳中天华夏企业管理咨询有限公司 www.ztchina.com.cn' },
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+      { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge,chrome=1' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -46,6 +49,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
+  imgUrl: { limit: 1 },
   generate: {
     dir: 'docs',
     subFolders: false

@@ -37,7 +37,11 @@
         <!-- 右侧新闻列表 -->
         <ul class="news-list grid grid-rows-3 gap-y-5">
           <li v-for="(anew, index) in news" :key="index" class="flex">
-            <img :src="anew.img" alt="" class="w-40 object-cover object-center" />
+            <img
+              :src="anew.img"
+              alt=""
+              class="w-40 object-cover object-center"
+            />
             <div class="news-info flex-grow">
               <div class="new-title">{{ anew.title }}</div>
               <div class="time">{{ anew.time }}</div>
@@ -148,12 +152,12 @@ export default {
 .news {
   position: relative;
   background-color: #f8f8f8;
+  padding-bottom: 60px;
 
   .news-content {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 40px;
-    margin-bottom: 60px;
 
     .index-news-swiper {
       widows: 100%;
